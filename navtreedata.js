@@ -27,7 +27,8 @@ var NAVTREE =
       [ "Course Introduction", "index.html#autotoc_md7", null ],
       [ "Continuous Integration Status", "index.html#autotoc_md8", null ],
       [ "Useful links", "index.html#autotoc_md9", null ],
-      [ "Course program", "index.html#autotoc_md10", null ]
+      [ "Quick start", "index.html#autotoc_md10", null ],
+      [ "Course program", "index.html#autotoc_md11", null ]
     ] ],
     [ "Introduction to the FSI-suite", "design.html", [
       [ "Installation", "design.html#installation", null ],
@@ -73,9 +74,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "amg_8cc.html",
-"class_p_d_es_1_1_serial_1_1_reduced_lagrange.html#a308bbafcf85187b836d3ff19f2cc40a7",
-"class_parsed_tools_1_1_grid_refinement.html#a66af6a2813c0d20f24ca6a7855503dab",
-"namespace_p_d_es_1_1_m_p_i.html"
+"class_p_d_es_1_1_serial_1_1_reduced_lagrange.html#a803602ebedbadf87dfa1a796524a999b",
+"class_parsed_tools_1_1_function.html#abc162946cf96b069657ddd429e3a7424",
+"index.html#autotoc_md9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
