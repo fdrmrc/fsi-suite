@@ -30,6 +30,7 @@
 #include <deal.II/non_matching/coupling.h>
 
 #include "assemble_coupling_mass_matrix_with_exact_intersections.h"
+#include "assemble_nitsche_with_exact_intersections.h"
 #include "compute_intersections.h"
 
 namespace ParsedTools
@@ -63,11 +64,13 @@ namespace ParsedTools
                          // quadratures on the
                          // intersection to drive the
                          //  projection
-                         //   exact_H1 = 1 << 4,       //< Exact H1-projection,
+                         // exact_H1 = 1 << 4,       //< Exact H1-projection,
                          //   using quadratures on the
                          //                            // intersection to drive
                          //                            the projection
                          //
+
+      exact_Nitsche = 1 << 5
     };
 
     /**
@@ -308,6 +311,23 @@ namespace ParsedTools
             space_mapping,
             embedded_mapping,
             *embedded_constraints);
+      }
+    else if (coupling_type == CouplingType::exact_Nitsche)
+      {
+        const double tol            = 1e-9;
+        const auto &cells_and_quads = dealii::NonMatching::compute_intersection(
+          *space_cache, *embedded_cache, this->quadrature_order, tol);
+
+        dealii::NonMatching::
+          assemble_nitsche_with_exact_intersections<spacedim, dim, spacedim>(
+            *space_dh,
+            cells_and_quads,
+            matrix,
+            *space_constraints,
+            space_mask,
+            space_mapping,
+            Functions::ConstantFunction<spacedim>(2.0),
+            100.0);
       }
   }
 #endif
