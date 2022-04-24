@@ -1,5 +1,6 @@
 var dir_d44c64559bbebec7f509842c48db8b23 =
 [
+    [ "cgal", "dir_36dea0a1374c25b9210852470047e626.html", "dir_36dea0a1374c25b9210852470047e626" ],
     [ "parsed_lac", "dir_65593bf93f1e4428cc81baf4bb94349f.html", "dir_65593bf93f1e4428cc81baf4bb94349f" ],
     [ "parsed_tools", "dir_8e8448d9aef603b86753e7cb911804a9.html", "dir_8e8448d9aef603b86753e7cb911804a9" ],
     [ "pdes", "dir_60faf9a10d52b04582224b9116454383.html", "dir_60faf9a10d52b04582224b9116454383" ],
@@ -15,7 +16,8 @@ var dir_d44c64559bbebec7f509842c48db8b23 =
       [ "LATrilinos", "struct_l_a_c_1_1_l_a_trilinos.html", "struct_l_a_c_1_1_l_a_trilinos" ]
     ] ],
     [ "lac_initializer.h", "lac__initializer_8h.html", [
-      [ "ScopedLACInitializer", "class_scoped_l_a_c_initializer.html", "class_scoped_l_a_c_initializer" ]
+      [ "BlockInitializer", "class_l_a_c_1_1_block_initializer.html", "class_l_a_c_1_1_block_initializer" ],
+      [ "Initializer", "class_l_a_c_1_1_initializer.html", "class_l_a_c_1_1_initializer" ]
     ] ],
     [ "mesh_handler.h", "mesh__handler_8h.html", null ],
     [ "moonolith_tools.h", "moonolith__tools_8h.html", null ],
